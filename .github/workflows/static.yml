@@ -36,6 +36,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '14.x'
+      - name: Pull project
+        run: git pull origin/master
       - name: Install Dependencies
         run: |
           npm install
