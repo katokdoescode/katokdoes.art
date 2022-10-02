@@ -37,7 +37,7 @@ jobs:
         with:
           node-version: '14.x'
       - name: Pull project
-        run: git pull origin/master
+        run: git pull https://github.com/katokdoescode/katokdoes.art.git
       - name: Install Dependencies
         run: |
           npm install
