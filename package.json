@@ -1,0 +1,29 @@
+{
+  "name": "katokdoes.art",
+  "version": "1.0.0",
+  "description": "Me personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katokdoescode/katokdoes.art.git"
+  },
+  "keywords": [
+    "11ty",
+    "A11Y",
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "@katokdoescode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katokdoescode/katokdoes.art/issues"
+  },
+  "homepage": "https://github.com/katokdoescode/katokdoes.art#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
+}

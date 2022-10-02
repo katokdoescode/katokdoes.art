@@ -1,0 +1,13 @@
+node_modules
+dist
+# IDE / Editor
+.idea
+.vscode
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+.env
