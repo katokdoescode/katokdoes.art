@@ -7,7 +7,7 @@ permalink: "/index.html"
 
 # 👋 Hi, I’m Danila
 
-- 👀 I’m Frontend Developer. I build accessibile web-applications;
+- 👀 I’m Frontend Developer. I build accessible web-applications;
 - Currently i'm working on [freshauto.ru](https://freshauto.ru) website that based on [Nuxt](https://nuxtjs.org/);
 - Also working on [static generator](https://www.11ty.dev/) controlled and configured by [Headless CMS](https://strapi.io/);
 - Contact me [danila@katokdoes.art](mailto:danila@katokdoes.art) 🙃.
@@ -36,6 +36,7 @@ My first production experience was at 2018, I built company phonebook that based
 ## Links
 
 - [Profile on htmlacademy](https://htmlacademy.ru/profile/katok)
+- [My GitHub](https://github.com/katokdoescode)
 
 ## Inspiration
 
