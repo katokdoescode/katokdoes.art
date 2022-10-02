@@ -42,4 +42,7 @@ My first production experience was at 2018, I built company phonebook that based
 - [Vadim Makeev](https://github.com/pepelsbey)
 - [doka.guide](https://github.com/doka-guide/content)
 
-Living in Georgia, Tbilisi
+## More
+Living in Georgia, Tbilisi.
+
+[View this page on GitHub](https://github.com/katokdoescode/katokdoes.art)
