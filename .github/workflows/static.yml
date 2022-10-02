@@ -32,7 +32,7 @@ jobs:
         uses: actions/setup-node@v1
       - name: Install Dependencies
         run: |
-          rm package-lock.json
+          ls
           npm install
           npm run generate
       - name: Setup Pages
