@@ -21,7 +21,7 @@ My first production experience was at 2018, I built company phonebook that based
 
 - [🏢 Office Tower website 🏙](https://officetower.ru/ru/) - Dual language website with interactive map of free-to-rent offices. Built on Django/HTML5/CSS3/JS with no frontend-frameworks;
 - [🧑‍🎓 Educational Consulting Center 👨‍🎓](https://consult.rosdorspk.ru/) - Road Scientific and Research Institute in Russia was needed a fresh website for students. Built with Vue.js(2) and Express.js as a backend. Created fully by myself.
-- [🚙 Fresh Auto 🚗](https://freshauto.ru) - Commercial vehicle marketplace. Work in team. Crafted with Nuxt.js(2) with TypeScript;
+- [🚙 Fresh Auto 🚗](https://freshauto.ru) - Commercial vehicle marketplace. Work in team. Crafted with Nuxt.js(2) with TypeScript *(Now in progress, so may not open new version because of DevOps works)*;
 - 🏗 ```New projects in progress..```
 
 ## My stack
