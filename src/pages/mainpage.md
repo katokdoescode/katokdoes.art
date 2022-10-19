@@ -14,7 +14,7 @@ permalink: "/index.html"
 
 ## More about me and my skills
 
-I started to learn frontend developing from 2013 while studying.
+I started to learn frontend development from 2013 while studying.
 My first production experience was at 2018, I built company phonebook that based on Django Temlates.
 
 ### Production projects
