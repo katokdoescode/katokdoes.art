@@ -27,6 +27,7 @@ I have done at least four production projects, all of them was based on differen
 - [🏢 Office Tower website 🏙](https://officetower.ru/ru/) - Dual language website with interactive map of free-to-rent offices. Built on Django/HTML5/CSS3/JS with no frontend-frameworks;
 - [🧑‍🎓 Educational Consulting Center 👨‍🎓](https://consult.rosdorspk.ru/) - Road Scientific and Research Institute in Russia needed a fresh website for students. Built with Vue.js(2) and Express.js as a backend. Created fully by myself.
 - [**🚙 Fresh Auto 🚗**](https://ip.freshauto.ru/) - Commercial vehicle marketplace. Work in a team. Crafted with Nuxt.js(2), TypeScript *(Removed from production, because of management issues)*;
+- Here is my latest assignment, blog site on Nuxt 3 - [https://github.com/katokdoescode/qtim-test-assigmnet](https://github.com/katokdoescode/qtim-test-assigmnet)
 
 ## My stack
 
