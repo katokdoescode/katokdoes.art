@@ -10,6 +10,7 @@ permalink: "/index.html"
 - 👀 I’m Frontend Developer. I build accessible web applications;
 - Currently, I'm working for [freshauto.ru](https://freshauto.ru) projects by creating new user experiences in the e-commerce car market;
 - Also I am the author of some JavaScript topics and projects in [Hyperskill](https://hyperskill.org/);
+- Vue.js track expert on Hyperskill;
 - Contact me [danila@katokdoes.art](mailto:danila@katokdoes.art) 🙃.
 
 ## More about me and my skills
@@ -27,7 +28,9 @@ I have done at least four production projects, all of them was based on differen
 - [🏢 Office Tower website 🏙](https://officetower.ru/ru/) - Dual language website with interactive map of free-to-rent offices. Built on Django/HTML5/CSS3/JS with no frontend-frameworks;
 - [🧑‍🎓 Educational Consulting Center 👨‍🎓](https://consult.rosdorspk.ru/) - Road Scientific and Research Institute in Russia needed a fresh website for students. Built with Vue.js(2) and Express.js as a backend. Created fully by myself.
 - [**🚙 Fresh Auto 🚗**](https://ip.freshauto.ru/) - Commercial vehicle marketplace. Work in a team. Crafted with Nuxt.js(2), TypeScript *(Removed from production, because of management issues)*;
-- Here is my latest assignment, blog site on Nuxt 3 - [https://github.com/katokdoescode/qtim-test-assigmnet](https://github.com/katokdoescode/qtim-test-assigmnet)
+- [🛠️ Vehicle maintenance appointment widget (NDA) ⚙🔩](https://service.freshauto.ru/) - Made entirely on Vue3\Vite, with partial typing. 🫰 Also 100% test coverage;
+- Here is my latest assignment, blog site on Nuxt 3 - [https://github.com/katokdoescode/qtim-test-assigmnet](https://github.com/katokdoescode/qtim-test-assigmnet);
+- [Demo of stories-like slider](https://katokdoescode.github.io/stories-like-slider/), [GH](https://github.com/katokdoescode/stories-like-slider) - My implementation of a simple but accessible slider.
 
 ## My stack
 
