@@ -7,57 +7,38 @@ permalink: "/index.html"
 
 # 👋 Hi, I’m Danila
 
-- 👀 I’m Frontend Developer. I build accessible web applications;
-- Currently, I'm working for [freshauto.ru](https://freshauto.ru) projects by creating new user experiences in the e-commerce car market;
-- Also I am the author of some JavaScript topics and projects in [Hyperskill](https://hyperskill.org/);
-- Vue.js track expert on Hyperskill;
-- Contact me [danila@katokdoes.art](mailto:danila@katokdoes.art) 🙃.
+I'm a frontend developer specializing in Vue.js and accessibility. I also have experience with Nuxt.js, TypeScript and modern JavaScript in my arsenal. I strive to create efficient and accessible interfaces that look and work great.
 
-## More about me and my skills
+## My experience
 
-I started to learn frontend development in 2013 while studying.
-My first production experience was in 2018, I built a company phonebook based on Django Templates. Now I'm writing educational topics for [Hyperskill (commercial + NDA)](https://hyperskill.org/) and [Doka (opensource)](https://doka.guide/).
-[Looking](https://www.linkedin.com/in/bdanila/) for new teams, ideas and projects!
+- Feb. 2023 - Today 		| [Hyperskill](https://hyperskill.org/): Frontend expert and author of educational articles;
+- Jan. 2021 - Tody      | [Fresh Auto](https://freshauto.ru/): Frontend developer, including working on complex projects;
+- Dec. 2021 - Apr. 2022 | [ROSDOR Research Institute](https://consult.rosdorspk.ru/): Fullstack developer, setting up a consulting center;
+- Sep. 2020 - Aug. 2021 | [OfficeTower](https://officetower.ru/): Freelance developer, creating a website to sell offices.
 
-### Current experience
+## What I do
 
-I have done at least four production projects, all of them was based on different technologies, so I learned Node.js (REST API, Nodemailer, JWT authentication), Vue.js and. Nuxt.js (Vitest, Vite, Webpack, Jest, Storybook) frameworks. Have experience with Django, Strapi, Pocketbase, and PHP as a backend. Have a lot of experience with declarative components, accessible HTML  markup, and high-performance CSS.
+- **Code creation**: Working with Vue.js versions 2 and 3, composition and options API, customizing bandlet builders, test coverage;
+- **Teaching**: Authoring articles and mentoring in frontend;
+- **Collaboration**: Easy to find common ground with colleagues and ready for open dialog to achieve project goals.
 
-### Production and commercial projects
+## About me
 
-- [🏢 Office Tower website 🏙](https://officetower.ru/ru/) - Dual language website with interactive map of free-to-rent offices. Built on Django/HTML5/CSS3/JS with no frontend-frameworks;
-- [🧑‍🎓 Educational Consulting Center 👨‍🎓](https://consult.rosdorspk.ru/) - Road Scientific and Research Institute in Russia needed a fresh website for students. Built with Vue.js(2) and Express.js as a backend. Created fully by myself.
-- [**🚙 Fresh Auto 🚗**](https://ip.freshauto.ru/) - Commercial vehicle marketplace. Work in a team. Crafted with Nuxt.js(2), TypeScript *(Removed from production, because of management issues)*;
-- [🛠️ Vehicle maintenance appointment widget (NDA) ⚙🔩](https://service.freshauto.ru/) - Made entirely on Vue3\Vite, with partial typing. 🫰 Also 100% test coverage;
-- Here is my latest assignment, blog site on Nuxt 3 - [https://github.com/katokdoescode/qtim-test-assigmnet](https://github.com/katokdoescode/qtim-test-assigmnet);
-- [Demo of stories-like slider](https://katokdoescode.github.io/stories-like-slider/), [GH](https://github.com/katokdoescode/stories-like-slider) - My implementation of a simple but accessible slider.
-
-## My stack
-
-- 🔥 Vue.js / Nuxt.js
-- 🚀 Svelte.js
-- ❤️ HTML5
-- 💔 CSS3 / SCSS / LESS
-- 💛 JS + TypeScript
-- 💥 Eleventy
-- 🌪 Node.js (Express)
+- **Education**: Programmer with secondary professional education and certificate in Unix systems administration;
+- **Languages**: Russian native and English level B2;
+- **Personal qualities**: Persistent, constantly learning, easy to communicate.
 
 ## Links
 
+- [GitHub](https://github.com/katokdoescode)
+- [LinkedШn](https://www.linkedin.com/in/bdanila/)
 - [Profile on htmlacademy](https://htmlacademy.ru/profile/katok)
-- [My GitHub](https://github.com/katokdoescode)
-- [Linkedin](https://www.linkedin.com/in/bdanila/)
-
-## Inspiration
-
-- [Vadim Makeev](https://github.com/pepelsbey)
-- [doka.guide](https://github.com/doka-guide/content)
-- [Web-standarts](https://web-standards.ru/)
-- [Ryan Mulligan](https://ryanmulligan.dev/)
-- [Ahmad Shadeed](https://ishadeed.com/)
+- [More about my experience](/experience)
 
 ## More
 
 Living in Georgia (country).
+
+I am always open to new projects and ideas. Email me at [danila@katokdoes.art](mailto:danila@katokdoes.art) and let's discuss how I can help your business grow!
 
 [View this page on GitHub](https://github.com/katokdoescode/katokdoes.art)
