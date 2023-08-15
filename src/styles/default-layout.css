@@ -27,6 +27,11 @@ a:hover::before, a:focus-visible::before {
 	text-align: center;
 }
 
+body {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
 @media screen and (max-width: 600px) {
 	body {
 		padding: 0 10px;
