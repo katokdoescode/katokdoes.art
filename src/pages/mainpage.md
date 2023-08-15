@@ -1,11 +1,14 @@
 ---
 title: '👋 Hello, my name is Danila'
-desc: 'This is the page about me, my work, projects, and other stuff'
+desc: 'I am Frontend Web Developer on Vue.js and this is the page about me, my work, projects, and other stuff'
+lang: 'en'
 layout: default.njk
 permalink: "/index.html"
 ---
 
 # 👋 Hi, I’m Danila
+
+[RU](/ru)
 
 I'm a frontend developer specializing in Vue.js and accessibility. I also have experience with Nuxt.js, TypeScript and modern JavaScript in my arsenal. I strive to create efficient and accessible interfaces that look and work great.
 
@@ -31,13 +34,13 @@ I'm a frontend developer specializing in Vue.js and accessibility. I also have e
 ## Links
 
 - [GitHub](https://github.com/katokdoescode)
-- [LinkedШn](https://www.linkedin.com/in/bdanila/)
+- [LinkedIn](https://www.linkedin.com/in/bdanila/)
 - [Profile on htmlacademy](https://htmlacademy.ru/profile/katok)
 - [More about my experience](/experience)
 
 ## More
 
-Living in Georgia (country).
+Living in Georgia (country). I am ready to relocate.
 
 I am always open to new projects and ideas. Email me at [danila@katokdoes.art](mailto:danila@katokdoes.art) and let's discuss how I can help your business grow!
 
