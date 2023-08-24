@@ -14,7 +14,7 @@ I'm a frontend developer specializing in Vue.js and accessibility. I also have e
 
 ## My experience
 
-- Feb. 2023 - Preset		| [Hyperskill](https://hyperskill.org/): Frontend expert and author of educational articles;
+- Feb. 2023 - Present		| [Hyperskill](https://hyperskill.org/): Frontend expert and author of educational articles;
 - Jan. 2021 - Present   | [Fresh Auto](https://freshauto.ru/): Frontend developer, including working on complex projects;
 - Dec. 2021 - Apr. 2022 | [ROSDOR Research Institute](https://consult.rosdorspk.ru/): Fullstack developer, setting up a consulting center;
 - Sep. 2020 - Aug. 2021 | [OfficeTower](https://officetower.ru/): Freelance developer, creating a website to sell offices.
