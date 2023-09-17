@@ -45,4 +45,10 @@ time::after,
 hr::after,
 address::after {
     outline-offset: 1px;
+    transition: color linear .1s;
+}
+
+body {
+    position: relative;
+    transition: background-color linear .5s;
 }

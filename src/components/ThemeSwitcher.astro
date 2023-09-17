@@ -1,0 +1,59 @@
+---
+interface Props {
+	lang: 'en' | 'ru';
+}
+
+function ComponentText(lang) {
+	const translations = {
+		en: {
+			legend: 'Theme',
+			btnAuto: 'Auto',
+			btnLight: 'Light',
+			btnDark: 'Dark',
+		},
+		ru: {
+			legend: 'Тема',
+			btnAuto: 'Авто',
+			btnLight: 'Светлая',
+			btnDark: 'Тёмная',
+		},
+	};
+
+	return translations[lang] || {};
+}
+
+const { lang } = Astro.props;
+const { legend, btnDark, btnLight, btnAuto } = ComponentText(lang);
+---
+
+<fieldset class='switcher'>
+	<legend class='switcher__legend'>{legend}</legend>
+	<input
+		id='light'
+		class='switcher__radio switcher__radio--light'
+		type='radio'
+		name='color-scheme'
+		value='light'
+	/>
+	<label for='light' aria-label={btnLight} title={btnLight}>🌕</label>
+
+	<input
+		id='auto'
+		class='switcher__radio switcher__radio--auto'
+		type='radio'
+		name='color-scheme'
+		value='auto'
+		checked
+	/>
+	<label for='auto' aria-label={btnAuto} title={btnAuto}>🌗</label>
+
+	<input
+		id='dark'
+		class='switcher__radio switcher__radio--dark'
+		type='radio'
+		name='color-scheme'
+		value='dark'
+	/>
+	<label for='dark' aria-label={btnDark} title={btnDark}>🌑</label>
+</fieldset>
+<script src='../scripts/index.js'></script>
