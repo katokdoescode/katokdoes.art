@@ -1,5 +1,5 @@
 html {
-  background-color: rgba(253, 255, 253, 1);
+  background-color: var(--color-bg-main);
 }
 
 body {
@@ -13,12 +13,12 @@ a {
 a:hover::before,
 a:focus-visible::before {
   position: fixed;
-  content: "Hold Ctrl (🍏Cmd) to open link in a new tab";
-  background-color: white;
+  content: "Hold Ctrl ( Cmd) to open link in a new tab";
+  background-color: var(--color-bg-main);
   padding: 5px;
-  border: 1px dotted rgba(0, 133, 10, 1);
+  border: 1px dotted var(--color-secondary);
   border-radius: 10px;
-  color: black;
+  color: var(--color-main);
   font-size: 10px;
   text-decoration: none;
   top: 5px;

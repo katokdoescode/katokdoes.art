@@ -1,13 +1,8 @@
 html {
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgba(33, 33, 33, 1);
+  font-family: Helvetica, Arial, sans-serif;
+  color: var(--color-main);
 }
 
-*,
-*::before,
-*::after {
-  outline-offset: 1px;
-}
 
 h1,
 h2,
@@ -20,16 +15,17 @@ h6 {
 }
 
 a {
-  color: rgba(0, 133, 10, 1);
+  color: var(--color-secondary);
   text-decoration-thickness: 3px;
   text-underline-offset: 5px;
   text-decoration-skip-ink: none;
+  outline-offset: 1px;
 }
 
 a:hover,
 a:focus-visible {
   outline: none;
-  text-decoration-color: tomato;
+  text-decoration-color: var(--color-accent);
 }
 
 li {
