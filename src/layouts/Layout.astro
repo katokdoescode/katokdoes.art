@@ -55,13 +55,14 @@ const { frontmatter } = Astro.props;
 		/>
 		<meta name='generator' content={Astro.generator} />
 		<title>{frontmatter.title}</title>
-		<ViewTransitions />
 	</head>
-	<body transition:animate='fade'>
-		<slot />
+	<body>
+		<main transition:animate='fade'>
+			<slot />
+		</main>
 
 		<ThemeSwitcher lang={frontmatter.lang} />
 
-		<script src="scripts/index.js"></script>
 	</body>
+	<script src="scripts/index.js"></script>
 </html>
