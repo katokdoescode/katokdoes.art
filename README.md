@@ -16,13 +16,21 @@ npm i && npm run dev
 
 ```text
 /
+├── dist
 ├── public
 │   └── styles
+│       ├── themes
+│       │   ├── dark.css
+│       │   └── light.css
 │       ├── default-layout.css
-│       └── fonts.css
+│       ├── fonts.css
+│       ├── global.css
+│       ├── index.css
+│       └── switcher.css
 ├── src
 │   ├── components
-│   │   └── ExperienceCard.astro
+│   │   ├── ExperienceCard.astro
+│   │   └── ThemeSwitcher.astro
 │   ├── data
 │   │   ├── en
 │   │   │   └── experience.json
@@ -33,11 +41,13 @@ npm i && npm run dev
 │   ├── pages
 │   │   ├── experience
 │   │   │   ├── ru
-│   │   │   │   └── index.astro
-│   │   │   └── index.astro
+│   │   │   │   └── index.mdx
+│   │   │   └── index.mdx
 │   │   ├── ru
-│   │   │   └── index.astro
-│   │   └── index.astro
+│   │   │   └── index.mdx
+│   │   └── index.mdx
+│   ├── scripts
+│   │   └── index.js
 │   └── env.d.ts
 ├── CNAME
 ├── README.md
