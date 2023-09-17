@@ -1,10 +1,24 @@
 {
   "name": "katokdoes.art",
-  "version": "1.0.0",
+  "version": "1.0.0-astro",
   "description": "Me personal website",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "generate": "npx @11ty/eleventy"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "prettify": "prettier --write ."
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^1.1.0",
+    "astro": "^3.1.0"
+  },
+  "devDependencies": {
+    "bun-types": "^1.0.2",
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.0"
   },
   "repository": {
     "type": "git",
@@ -15,15 +29,13 @@
     "A11Y",
     "html",
     "css",
-    "js"
+    "js",
+    "astro"
   ],
   "author": "@katokdoescode",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/katokdoescode/katokdoes.art/issues"
   },
-  "homepage": "https://github.com/katokdoescode/katokdoes.art#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^1.0.2"
-  }
+  "homepage": "https://github.com/katokdoescode/katokdoes.art#readme"
 }

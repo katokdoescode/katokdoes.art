@@ -30,25 +30,29 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
       - name: Setup Pages
         uses: actions/configure-pages@v2
-      - name: Setup Node
-        uses: actions/setup-node@v1
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
         with:
-          node-version: '14.x'
+          version: 1.0.0
+
       - name: Pull project
         run: git pull https://github.com/katokdoescode/katokdoes.art.git
       - name: Install Dependencies
         run: |
-          npm install
-          npm run generate
+          bun i
+          bun run build
           ls -l
+
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: 'dist/'
+          path: "dist/"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1

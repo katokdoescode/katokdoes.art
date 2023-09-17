@@ -1,0 +1,18 @@
+---
+interface Props {
+	company: string;
+	position: string;
+	duration: string;
+	responsibilities: string[];
+}
+
+const { company, position, duration, responsibilities } = Astro.props;
+---
+
+<h3>{company}</h3>
+<p>{position}, <b>{duration}</b></p>
+<ul>
+	{responsibilities.map(responsibility => (
+		<li>{responsibility}</li>
+	))}
+</ul>

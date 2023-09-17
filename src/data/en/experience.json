@@ -1,0 +1,42 @@
+[
+  {
+    "company": "Hyperskill",
+    "position": "Frontend expert and article writer",
+    "duration": "February 2023-present",
+    "responsibilities": [
+      "Author of more than 15 educational articles in English on Node.js and JavaScript.",
+      "Author and expert of a new direction - Vue.js.",
+      "Expert reviewer for articles by other authors."
+    ]
+  },
+  {
+    "company": "Fresh Auto",
+    "position": "Frontend developer",
+    "duration": "January 2021 - present (full-time)",
+    "responsibilities": [
+      "Working on a new company website in Nuxt.js and TypeScript.",
+      "Widget for service station appointment on Vue.js version 3 and TypeScript.",
+      "Development of internal services, feedback forms, corporate help portal."
+    ]
+  },
+  {
+    "company": "ROSDOR RESEARCH INSTITUTE",
+    "position": "Fullstack JavaScript developer",
+    "duration": "December 2021 - April 2022 (part-time)",
+    "responsibilities": [
+      "Building a consultation center for road maintenance workers on Vue.js 2 and a backend on Express.js for it.",
+      "Administrative interface, building a library of components.",
+      "Full customer satisfaction, successful release."
+    ]
+  },
+  {
+    "company": "OfficeTower",
+    "position": "Freelance Frontend developer",
+    "duration": "September 2020 - August 2021",
+    "responsibilities": [
+      "Development of office for rent website, interactive office map.",
+      "Frontend on Django templates and vanilla JavaScript.",
+      "Self-configuration of the server side of the project."
+    ]
+  }
+]
