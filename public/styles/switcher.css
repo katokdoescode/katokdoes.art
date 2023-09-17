@@ -14,6 +14,12 @@
 	border-radius: 2em;
 }
 
+@media print {
+	.switcher {
+		display: none;
+	}
+}
+
 /* Switcher Legend */
 
 .switcher__legend {
