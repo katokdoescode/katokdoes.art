@@ -1,0 +1,56 @@
+---
+import Layout from '~/Layout.astro';
+import ExperienceCard from '@/ExperienceCard.astro';
+import experience from 'data/en/experience.json'
+
+const title = '👋 Hello, my name is Danila, I am frontend web developer.';
+const desc = 'This is the page about my experience.';
+const lang = 'en';
+---
+
+<Layout {title} {desc} {lang}>
+	<h1>👋 Hi, I’m Danila</h1>
+	<p><a href='/'>⤺ Back to main</a> | <a href='/experience/ru'>RU</a></p>
+	<h2>
+		To learn more about my work experience you can go to <a
+			href='https://www.linkedin.com/in/bdanila/'>LinkedIn</a>
+	</h2>
+	<p>
+		If the link doesn't open, details of my work experience are on this page 😌
+	</p>
+	<h2>About me</h2>
+	<p>
+		I consider my core competencies to be extensive experience with Vue.js 2 and
+		3 frameworks, knowledge of Nuxt.js, building bundles, testing code.
+		Excellent knowledge of HTML5, I can build complex components, I know how to
+		make the interface accessible. I write in modern JavaScript and TypeScript.
+		Characterized by persistence, constant self-development, and ease of
+		communication.
+	</p>
+	<h2>Experience</h2>
+	{experience.map(({company, position, duration, responsibilities}) => (
+		<ExperienceCard {company} {position} {duration} {responsibilities}/>
+	))}
+
+	<h2>Education</h2>
+	<ul>
+		<li>Secondary professional education: Programmer.</li>
+		<li>HTML-Academy: Qualification on work with Vue.js.</li>
+		<li>Certificate in Unix systems administration.</li>
+	</ul>
+	<h2>Additional information</h2>
+	<ul>
+		<li>Languages: Russian (native), English (read and speak).</li>
+		<li>
+			Other: Ready to relocate, extensive experience with different tools, quick
+			adaptation to employer's requirements.
+		</li>
+	</ul>
+	<h2>Conclusion</h2>
+	<p>
+		I consider myself a highly qualified specialist, constantly developing and
+		ready to contribute to the development of your company. Ready to discuss
+		details in person or over the phone.
+	</p>
+	<p><a href='/'>⤺ Back to main</a> | <a href='/experience/ru'>RU</a></p>
+</Layout>

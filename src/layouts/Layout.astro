@@ -1,0 +1,29 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+
+interface Props {
+	title: string;
+	desc: string;
+	lang: string;
+}
+
+const { title, desc, lang } = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content={ desc }>
+		<link rel="stylesheet" href="/styles/fonts.css">
+		<link rel="stylesheet" href="/styles/default-layout.css">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<ViewTransitions />
+	</head>
+	<body transition:animate="fade">
+		<slot/>
+	</body>
+</html>
