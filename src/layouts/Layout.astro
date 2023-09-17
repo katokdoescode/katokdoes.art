@@ -2,22 +2,16 @@
 import { ViewTransitions } from 'astro:transitions';
 import ThemeSwitcher from '@/ThemeSwitcher.astro';
 
-interface Props {
-	title: string;
-	desc: string;
-	lang: 'en' | 'ru';
-}
-
-const { title, desc, lang } = Astro.props;
+const { frontmatter } = Astro.props;
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang={frontmatter.lang}>
 	<head>
 		<meta charset='UTF-8' />
 		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 		<meta http-equiv='X-UA-Compatible' content='IE=edge' />
-		<meta name='description' content={desc} />
+		<meta name='description' content={frontmatter.desc} />
 		<meta name='color-scheme' content='light dark' />
 		<meta
 			name='theme-color'
@@ -46,27 +40,28 @@ const { title, desc, lang } = Astro.props;
 		<link rel='stylesheet' href='/styles/index.css' />
 		<link
 			rel='stylesheet'
-			href='styles/themes/light.css'
+			href='/styles/themes/light.css'
 			media='(prefers-color-scheme: light)'
 		/>
 		<link
 			rel='stylesheet'
-			href='styles/themes/dark.css'
+			href='/styles/themes/dark.css'
 			media='(prefers-color-scheme: dark)'
 		/>
 		<link
 			rel='stylesheet'
-			href='styles/themes/light.css'
+			href='/styles/themes/light.css'
 			media='print'
 		/>
 		<meta name='generator' content={Astro.generator} />
-		<title>{title}</title>
+		<title>{frontmatter.title}</title>
 		<ViewTransitions />
 	</head>
 	<body transition:animate='fade'>
 		<slot />
 
-		<ThemeSwitcher {lang}/>
+		<ThemeSwitcher lang={frontmatter.lang} />
+
 		<script src="scripts/index.js"></script>
 	</body>
 </html>
