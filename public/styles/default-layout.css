@@ -13,7 +13,7 @@ a {
 a:hover::before,
 a:focus-visible::before {
   position: fixed;
-  content: "Hold Ctrl ( Cmd) to open link in a new tab";
+  content: "Hold Ctrl ( Cmd) to open link in a new tab" / "Hold Control (or command on Mac) to open link in a new tab";
   background-color: var(--color-bg-main);
   padding: 5px;
   border: 1px dotted var(--color-secondary);
