@@ -1,5 +1,7 @@
 # katokdoes.art
 
+This project is also has an Eleventy version - [see 11ty version](https://github.com/katokdoescode/katokdoes.art/tree/eleventy)
+
 If you wanna try this repo in work, follow these steps:
 
 Bun:
