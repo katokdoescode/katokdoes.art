@@ -1,6 +1,6 @@
 # katokdoes.art
 
-This is a 11ty based project.
+This is a 11ty based project (Also available on [Astro](https://github.com/katokdoescode/katokdoes.art)).
 If yuo wanna try this repo in work, follow these steps:
 
 ## Install and run
