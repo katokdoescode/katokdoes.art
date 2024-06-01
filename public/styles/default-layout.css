@@ -10,25 +10,6 @@ a {
   position: relative;
 }
 
-a:hover::before,
-a:focus-visible::before {
-  position: fixed;
-  content: "Hold Ctrl ( Cmd) to open link in a new tab" / "Hold Control (or command on Mac) to open link in a new tab";
-  background-color: var(--color-bg-main);
-  padding: 5px;
-  border: 1px dotted var(--color-secondary);
-  border-radius: 10px;
-  color: var(--color-main);
-  font-size: 10px;
-  text-decoration: none;
-  top: 5px;
-  right: 5px;
-  width: 100px;
-  line-height: 12px;
-  text-align: center;
-  z-index: 1;
-}
-
 body {
   max-width: 1000px;
   margin: 0 auto;
@@ -50,4 +31,9 @@ body {
 
 ul {
   margin: 0.6em 0 1em;
+}
+
+@view-transition {
+  navigation: auto;
+  types: slide, forwards;
 }

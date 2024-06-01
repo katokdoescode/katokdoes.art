@@ -3,7 +3,6 @@ html {
   color: var(--color-main);
 }
 
-
 h1,
 h2,
 h3,
@@ -12,6 +11,10 @@ h5,
 h6 {
   margin: 0.8em 0 0.2em;
   text-wrap: balance;
+}
+
+main > h1 {
+  max-width: 60vw;
 }
 
 a {
