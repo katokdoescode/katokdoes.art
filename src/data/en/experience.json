@@ -1,8 +1,18 @@
 [
   {
     "company": "Hyperskill",
+    "position": "Frontend developer on Vue.js",
+    "duration": "September 2023-Present",
+    "responsibilities": [
+      "Mastering web tool for content creators.",
+      "Product mind and cross-team communication.",
+      "Gathering user feedback, UI/UX enhancing, feature and hypothesis prototyping."
+    ]
+  },
+  {
+    "company": "Hyperskill",
     "position": "Frontend expert and article writer",
-    "duration": "February 2023-present",
+    "duration": "February 2023-September 2023",
     "responsibilities": [
       "Author of more than 15 educational articles in English on Node.js and JavaScript.",
       "Author and expert of a new direction - Vue.js.",
