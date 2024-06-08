@@ -2,17 +2,18 @@
   {
     "company": "Hyperskill",
     "position": "Frontend developer on Vue.js",
-    "duration": "September 2023-Present",
+    "duration": "September 2023 - Present (full-time)",
     "responsibilities": [
-      "Mastering web tool for content creators.",
+      "Mastering web tool for content creators, WYSIWYG, plugins, UI Library.",
       "Product mind and cross-team communication.",
-      "Gathering user feedback, UI/UX enhancing, feature and hypothesis prototyping."
+      "Gathering user feedback, UI/UX enhancing, feature and hypothesis prototyping.",
+      "E2E and Unit test coverage, working with debt, project roadmap planning."
     ]
   },
   {
     "company": "Hyperskill",
     "position": "Frontend expert and article writer",
-    "duration": "February 2023-September 2023",
+    "duration": "February 2023 - September 2023",
     "responsibilities": [
       "Author of more than 15 educational articles in English on Node.js and JavaScript.",
       "Author and expert of a new direction - Vue.js.",
@@ -22,7 +23,7 @@
   {
     "company": "Fresh Auto",
     "position": "Frontend developer",
-    "duration": "January 2021 - present (full-time)",
+    "duration": "January 2020 - September 2023 (full-time)",
     "responsibilities": [
       "Working on a new company website in Nuxt.js and TypeScript.",
       "Widget for service station appointment on Vue.js version 3 and TypeScript.",
@@ -48,5 +49,16 @@
       "Frontend on Django templates and vanilla JavaScript.",
       "Self-configuration of the server side of the project."
     ]
-  }
+  },
+  {
+    "company": "Fresh Auto",
+    "position": "System Administrator",
+    "duration": "January 2018 - February 2020 (full-time)",
+    "responsibilities": [
+      "Working as tech support unit, and system administrator on Ubuntu & Windows, servers and desktops, network and ip-phones",
+      "People management, communication, business trips.",
+      "Setting up ticket tracking system (Like Jira)", 
+      "Opening new offices from the ruins."
+    ]
+  },
 ]
