@@ -11,3 +11,7 @@ dist
 *.log
 npm-debug.log*
 .env
+
+# Memory Bank & Cursor
+.cursor
+memory-bank
