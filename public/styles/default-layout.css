@@ -33,6 +33,12 @@ ul {
   margin: 0.6em 0 1em;
 }
 
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 @view-transition {
   navigation: auto;
   types: slide, forwards;

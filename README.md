@@ -5,11 +5,13 @@ This project is also has an Eleventy version - [see 11ty version](https://github
 If you wanna try this repo in work, follow these steps:
 
 Bun:
+
 ```bash
 bun i && bun dev
 ```
 
 npm:
+
 ```bash
 npm i && npm run dev
 ```

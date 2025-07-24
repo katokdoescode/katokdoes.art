@@ -3,6 +3,9 @@ import { ViewTransitions } from 'astro:transitions';
 import ThemeSwitcher from '@/ThemeSwitcher.astro';
 
 const { frontmatter } = Astro.props;
+
+const lang = frontmatter.lang === 'en' ? '' : frontmatter.lang;
+const returnButtonText = frontmatter.lang === 'ru' ? 'Вернуться ко всем статьям' : 'Return to all articles';
 ---
 
 <!doctype html>
@@ -37,6 +40,8 @@ const { frontmatter } = Astro.props;
 
 		<link rel='stylesheet' href='/styles/fonts.css' />
 		<link rel='stylesheet' href='/styles/default-layout.css' />
+		<link rel='stylesheet' href='/styles/article-page.css' />
+		<link rel='stylesheet' href='/styles/articles-base.css' />
 		<link rel='stylesheet' href='/styles/index.css' />
 		<link
 			rel='stylesheet'
@@ -56,13 +61,36 @@ const { frontmatter } = Astro.props;
 		<meta name='generator' content={Astro.generator} />
 		<title>{frontmatter.title}</title>
 	</head>
-	<body>
-		<main class='blog' transition:animate='fade'>
-			<slot />
+	<body class="articles-body">
+		<header class="articles-header">
+			<a href={`/articles/${lang}`}>← {returnButtonText}</a>
+			<ThemeSwitcher class="relative" lang={frontmatter.lang} />
+		</header>
+		<main class='article' transition:animate='fade'>
+			<article class="article-content">
+				<header class="article-header">
+					<h1>{frontmatter.title}</h1>
+					<div class="article-meta">
+						<time datetime={frontmatter.date}>{new Date(frontmatter.date).toLocaleDateString(frontmatter.lang === 'ru' ? 'ru-RU' : 'en-US', {
+							year: 'numeric',
+							month: 'long',
+							day: 'numeric'
+						})}</time>
+					</div>
+				</header>
+
+				<div class="article-body">
+					<slot />
+				</div>
+
+				<footer class="article-footer">
+					<a href={`/articles/${lang}`} class="back-link">← {returnButtonText}</a>
+					<a href={frontmatter.lang === 'en' ? `/articles/ru/${frontmatter.slug}` : `/articles/${frontmatter.slug}`} class="lang-link">
+						{frontmatter.lang === 'en' ? 'Read in Russian' : 'Read in English'}
+					</a>
+				</footer>
+			</article>
 		</main>
-
-		<ThemeSwitcher lang={frontmatter.lang} />
-
 	</body>
 	<script src="scripts/index.js"></script>
 </html>

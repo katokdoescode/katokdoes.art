@@ -1,0 +1,56 @@
+---
+import ArticleIndexLayout from '~/ArticleIndex.astro';
+
+// Import all English MDX article files
+const articles = await import.meta.glob('./*.mdx', { eager: true });
+
+// Process articles data from MDX frontmatter
+const articlesList = Object.entries(articles)
+  .filter(([path]) => !path.includes('/ru/')) // Only English articles
+  .map(([path, data]) => {
+    const articleSlug = path.split('/').pop()?.replace('.mdx', '') || '';
+    const articleData = data as any;
+
+    return {
+      slug: articleSlug,
+      title: articleData.frontmatter.title,
+      description: articleData.frontmatter.description,
+      date: articleData.frontmatter.date,
+      tags: articleData.frontmatter.tags
+    };
+  })
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()); // Sort by date, newest first
+
+const frontmatter = {
+  title: 'Articles',
+  desc: 'My articles about web development, Vue.js, and other topics',
+  lang: 'en'
+};
+---
+
+<ArticleIndexLayout frontmatter={frontmatter}>
+  <h1>Articles</h1>
+
+  <div class="articles-grid">
+    {articlesList.map((article) => (
+      <article class="article-card">
+        <header class="article-card-header">
+          <h2><a href={`/articles/${article.slug}`}>{article.title}</a></h2>
+          <time datetime={article.date}>
+            {new Date(article.date).toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            })}
+          </time>
+        </header>
+        <p class="article-excerpt">
+          {article.description}
+        </p>
+        <footer class="article-card-footer">
+          <a href={`/articles/${article.slug}`} class="read-more">Read more</a>
+        </footer>
+      </article>
+    ))}
+  </div>
+</ArticleIndexLayout>

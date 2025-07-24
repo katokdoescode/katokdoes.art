@@ -1,0 +1,77 @@
+---
+import ThemeSwitcher from '@/ThemeSwitcher.astro';
+
+const { frontmatter } = Astro.props;
+
+const mainPageLinkText = frontmatter.lang === 'ru' ? 'На главную' : 'Main page';
+---
+
+<!doctype html>
+<html lang={frontmatter.lang}>
+	<head>
+		<meta charset='UTF-8' />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+		<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+		<meta name='description' content={frontmatter.desc} />
+		<meta name='color-scheme' content='light dark' />
+		<meta
+			name='theme-color'
+			media='(prefers-color-scheme: light)'
+			content='#FDFFFD'
+		/>
+		<meta
+			name='theme-color'
+			media='(prefers-color-scheme: dark)'
+			content='#212121'
+		/>
+
+		<script type='text/javascript'>
+			// Fallback for old browsers
+			if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+				document.documentElement.style.display = 'none';
+				document.head.insertAdjacentHTML(
+					'beforeend',
+					'<link rel="stylesheet" href="styles/themes/light.css" onload="document.documentElement.style.display=\'\'">',
+				);
+			}
+		</script>
+
+		<link rel='stylesheet' href='/styles/fonts.css' />
+		<link rel='stylesheet' href='/styles/default-layout.css' />
+		<link rel='stylesheet' href='/styles/articles-index.css' />
+		<link rel='stylesheet' href='/styles/articles-base.css' />
+		<link rel='stylesheet' href='/styles/index.css' />
+		<link
+			rel='stylesheet'
+			href='/styles/themes/light.css'
+			media='(prefers-color-scheme: light)'
+		/>
+		<link
+			rel='stylesheet'
+			href='/styles/themes/dark.css'
+			media='(prefers-color-scheme: dark)'
+		/>
+		<link
+			rel='stylesheet'
+			href='/styles/themes/light.css'
+			media='print'
+		/>
+		<meta name='generator' content={Astro.generator} />
+		<title>{frontmatter.title}</title>
+	</head>
+	<body class="articles-body">
+		<header class="articles-header">
+			<div class="articles-header-links">
+				<a href="/" class="back-link">← {mainPageLinkText}</a>
+				{frontmatter.lang === 'ru' && <a href="/articles">EN</a>}
+				{frontmatter.lang === 'en' && <a href="/articles/ru">RU</a>}
+			</div>
+			<ThemeSwitcher class="relative" lang={frontmatter.lang} />
+		</header>
+		<main class='article-index' transition:animate='fade'>
+			<slot />
+		</main>
+
+	</body>
+	<script src="scripts/index.js"></script>
+</html>

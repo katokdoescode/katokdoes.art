@@ -1,0 +1,35 @@
+---
+interface Props {
+	src: string
+	alt: string
+	type: string
+	fallbackType: string
+	class: string
+	description: string
+}
+
+const {
+	src,
+	alt,
+	type,
+	fallbackType,
+	description,
+	class: className
+} = Astro.props
+
+const imageData = {
+	srcset: `${src}.${type}`,
+	fallbackSrcset: `${src}.${fallbackType}`
+}
+---
+<figure class={`article-figure ${className}`}>
+  <picture>
+    <source srcset={imageData.srcset} type={`image/${type}`}>
+    <source srcset={imageData.fallbackSrcset} type={`image/${fallbackType}`}>
+    <img src={imageData.fallbackSrcset} height="600" alt={alt}>
+  </picture>
+
+  <figcaption>
+    <p>{description}</p>
+  </figcaption>
+</figure>

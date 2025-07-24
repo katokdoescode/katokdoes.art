@@ -1,6 +1,7 @@
 ---
 interface Props {
 	lang: 'en' | 'ru';
+	class?: string;
 }
 
 function ComponentText(lang) {
@@ -22,11 +23,11 @@ function ComponentText(lang) {
 	return translations[lang] || {};
 }
 
-const { lang } = Astro.props;
+const { lang, class: className } = Astro.props;
 const { legend, btnDark, btnLight, btnAuto } = ComponentText(lang);
 ---
 
-<fieldset class='switcher'>
+<fieldset class={`switcher ${className}`}>
 	<legend class='switcher__legend'>{legend}</legend>
 	<input
 		id='light'

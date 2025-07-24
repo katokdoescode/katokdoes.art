@@ -1,0 +1,110 @@
+---
+title: "From classic development to vibecoding: how to create a full-fledged application in a day"
+description: "How to build an MVP in a day using AI tools: experience transitioning from classic development to vibecoding, Nuxt templates, working with Cursor, Memory Bank, and creating real projects like AITom and Rolloo."
+date: "2025-07-23"
+tags:
+  [
+    "VibeCoding",
+    "Experience",
+    "Vue.js",
+    "Nuxt.js",
+    "TypeScript",
+    "JavaScript",
+    "Accessibility",
+    "Web Development",
+    "Frontend Development",
+  ]
+lang: "en"
+slug: "vibecoding"
+layout: "~/ArticlePage.astro"
+---
+
+import ArticleFigure from "@/ArticleFigure.astro";
+
+It took very little time to transform from an ordinary developer into a vibe coder, but, as they say, there is a catch. In this article, I share my experience of creating several new products that appeared in just a few days, and I talk about how my work has changed dramatically compared to developing for large monoliths.
+I want to use [Rolloo.app](https://rolloo.app/) and [AITom.app](https://aitom.app/) as examples to show what it's like to start something from scratch with AI tools.
+
+## How I became a vibe coder
+
+I used to work on the [Hyperskill](https://hyperskill.org/) academy, a large product for teaching programming. As a developer, I wrote code, attended meetings, tested... the usual routine. But when Cursor, Windsurf, and Roocode appeared, everything changed dramatically. It became clear that prototyping could now be done much faster, which meant there was time for experimentation.
+
+As a result, I started working on autonomous AI tutors, me with the team created a service that connects to your online meetings, transcribes them, and automatically generates tasks for reviewing the material.
+
+<ArticleFigure
+  src="/public/images/Dashboard - AITom"
+  type="webp"
+  fallbackType="jpeg"
+  alt="AITom application dashboard with the ability to add a link to an online call for subsequent processing"
+  description="AI Tom main panel. This displays a list of current and past meetings (lessons) with the option to add new meetings for processing."
+/>
+
+Creating an MVP took very little time, but the result already works! After getting feedback from the first users, we learned a lot of interesting things and decided to try my hand at creating a role-playing simulator.
+
+## A Full-Featured Application in One Day
+
+For a quick start, I prepared two templates for vibecode applications:
+
+- For Nuxt using NuxtUI [(GitHub)](https://github.com/katokdoescode/vibecoding-nuxt-template)
+- Also for Nuxt, but with ShadCN components [(GitHub)](https://github.com/katokdoescode/vibecoding-nuxt-template/tree/shadcn)
+
+> Spoiler: the ShadCN template performed significantly better...
+
+To keep code generation quality high, I used [Memory Bank MCP](https://github.com/ipospelov/mcp-memory-bank). Despite increased token consumption, this is a must-have for serious projects. Memory Bank saves all the specifics of your project: architecture, framework details, coding style, and much more. The bigger the project, the more benefit you get from Memory Bank.
+
+> If you haven't encountered [MCP](https://modelcontextprotocol.io/introduction) at all, I recommend just looking at the [list of available options](https://glama.ai/mcp/servers) - I think you'll find something useful for your project.
+
+## Development Process
+
+Once I settled on the idea, I described all my thoughts in a markdown file in the project root and asked Cursor to read it and break the project into small stages. After decomposing the tasks, I asked Cursor to solve them one by one.
+
+First, we created case cards, described them, and designed a schema for Supabase. Then we designed the case page and added chat functionality. Everything would have been simpler if I hadn't decided to use the very fresh [Vercel AI Gateway](https://vercel.com/docs/ai-gateway) technology. It allows you to simply pass an LLM model name and get a structured response. This is how a live chat with an "interviewer" for the case topic appeared.
+
+<ArticleFigure
+  src="/public/images/Transforming Technical Knowledge"
+  type="webp"
+  fallbackType="jpeg"
+  alt="Chat interface with a bot playing a role from the created scenario"
+  description="Example of working with a live case: chat with a bot that plays the role of an interviewer. The bot has a name, character, behavioral features, and a unique communication style."
+/>
+
+What I enjoyed most was working with ShadCN - Cursor understood perfectly how to build interfaces from these components and rarely made mistakes with complex elements like forms and modal windows. I also created rules for Cursor in the `/.cursor/rules/` directory with descriptions of the framework and used libraries and packages. This can be automated by asking Cursor itself:
+
+```
+Create (if not exist) directory named '.cursor/rules' in the project root.
+Then create new rule file that will be always applied.
+Analyse the project structure and used npm packages, and generate the description
+```
+
+## Further Project Development
+
+From there, everything went smoothly. I described each feature in detail and controlled Cursor's work. For small changes, Auto mode is sufficient, but for implementing new features, it's better to use "MAX" mode - it consumes more tokens, but the quality of results is significantly higher.
+
+In just a few hours, I managed to build an MVP and test the product myself. The result impressed me greatly. You get used to good things quickly, though tokens run out quickly too...
+
+## Why You Should Try It
+
+If you're skeptical about LLM capabilities in writing production code - this is a partially outdated view. With proper project and development environment preparation, and understanding of the processes involved, achieving excellent results isn't that difficult.
+
+In the early stages, before the application turns into a huge monolith, development speed increases by 5-10 times.
+
+> My advice: don't be afraid to experiment. Creating pet projects has become incredibly accessible. What used to take weeks can now be done in a day. This opens up tons of opportunities for testing ideas and getting quick user feedback.
+
+## Starting from Scratch
+
+Don't put it off:
+
+1. Install Cursor or another AI editor
+2. Choose a simple idea for a pet project
+3. Use my templates as a starting point
+4. Don't be afraid to experiment with new technologies
+
+The best way to understand the capabilities of new tools is to start using them.
+
+## Feedback and Contacts
+
+I'm open to any feedback. Reach out for demo access to [AI Tom](https://aitom.app/) and [Rolloo](https://rolloo.app/) - I'll be happy to show the projects in action. I'm also ready to share experience developing similar solutions. I think we can be useful to each other.
+
+### Contacts
+
+- LinkedIn: https://www.linkedin.com/in/bdanila/
+- Email: danila.borunov@hyperskill.org
