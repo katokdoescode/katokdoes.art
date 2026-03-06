@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Company Transfer Details</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <img src="logo.png" alt="Company logo" class="site-header__logo" />
+      <p class="site-header__tagline">Quick transfer instructions for your donation</p>
+    </header>
+    <main class="card" aria-labelledby="transfer-heading">
+      <h1 id="transfer-heading">Bank transfer card</h1>
+      <p class="card__intro">
+        Copy the account holder or IBAN to share accurate payment information.
+      </p>
+      <section class="card__fields" aria-live="polite">
+        <article class="field">
+          <div class="field__text">
+            <p class="field__label">Account holder</p>
+            <p class="field__value" id="account-name">Anita Kovalenko</p>
+          </div>
+          <button
+            class="copy-button"
+            type="button"
+            data-copy-target="account-name"
+            data-copy-label="Account holder"
+          >
+            Copy name
+          </button>
+        </article>
+        <article class="field">
+          <div class="field__text">
+            <p class="field__label">IBAN</p>
+            <p class="field__value" id="account-iban">DE89 3704 0044 0532 0130 00</p>
+          </div>
+          <button
+            class="copy-button"
+            type="button"
+            data-copy-target="account-iban"
+            data-copy-label="IBAN"
+          >
+            Copy IBAN
+          </button>
+        </article>
+        <article class="field">
+          <div class="field__text">
+            <p class="field__label">Reference (optional)</p>
+            <p class="field__value" id="payment-note">Community Relief Fund</p>
+          </div>
+          <button
+            class="copy-button"
+            type="button"
+            data-copy-target="payment-note"
+            data-copy-label="Reference"
+          >
+            Copy note
+          </button>
+        </article>
+      </section>
+      <p class="status-message" role="status" aria-live="polite" id="copy-status"></p>
+    </main>
+    <script>
+      const buttons = document.querySelectorAll('[data-copy-target]');
+      const statusEl = document.getElementById('copy-status');
+
+      function updateStatus(message) {
+        statusEl.textContent = message;
+      }
+
+      async function copyContent(targetId, label) {
+        const source = document.getElementById(targetId);
+        const text = source?.textContent?.trim();
+        if (!text) {
+          updateStatus(`Unable to copy ${label?.toLowerCase() ?? 'text'}.`);
+          return;
+        }
+        try {
+          if (navigator.clipboard?.writeText) {
+            await navigator.clipboard.writeText(text);
+          } else {
+            const range = document.createRange();
+            range.selectNodeContents(source);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            document.execCommand('copy');
+            selection.removeAllRanges();
+          }
+          updateStatus(`${label} copied to clipboard.`);
+        } catch (error) {
+          console.error(error);
+          updateStatus(`Copy failed. Select and copy ${label} manually.`);
+        }
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+          copyContent(button.dataset.copyTarget, button.dataset.copyLabel);
+        });
+      });
+    </script>
+  </body>
+</html>
