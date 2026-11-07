@@ -1,13 +1,25 @@
 [
   {
+    "company": "Rolloo.app",
+    "position": "Product owner, tech lead and main developer",
+    "duration": "May 2025 - December 2025 (full-time)",
+    "responsibilities": [
+      "Product idea development;",
+      "Pitching the product;",
+      "Finding investments;",
+      "Full-cycle development, deployment, automation;",
+      "Building complex LLM chains."
+    ]
+  },
+  {
     "company": "Hyperskill",
     "position": "Frontend developer on Vue.js",
-    "duration": "September 2023 - Present (full-time)",
+    "duration": "September 2023 - May 2025",
     "responsibilities": [
-      "Mastering web tool for content creators, WYSIWYG, plugins, UI Library.",
-      "Product mind and cross-team communication.",
-      "Gathering user feedback, UI/UX enhancing, feature and hypothesis prototyping.",
-      "E2E and Unit test coverage, working with debt, project roadmap planning."
+      "Mastering a web tool for content creators, WYSIWYG, plugins, UI library;",
+      "Product mind and cross-team communication;",
+      "Gathering user feedback, UI/UX enhancement, feature and hypothesis prototyping;",
+      "E2E and unit test coverage, working with debt, project roadmap planning."
     ]
   },
   {
@@ -15,8 +27,8 @@
     "position": "Frontend expert and article writer",
     "duration": "February 2023 - September 2023",
     "responsibilities": [
-      "Author of more than 15 educational articles in English on Node.js and JavaScript.",
-      "Author and expert of a new direction - Vue.js.",
+      "Author of more than 15 educational articles in English on Node.js and JavaScript;",
+      "Author and expert in a new area — Vue.js;",
       "Expert reviewer for articles by other authors."
     ]
   },
@@ -25,8 +37,8 @@
     "position": "Frontend developer",
     "duration": "February 2020 - September 2023 (full-time)",
     "responsibilities": [
-      "Working on a new company website in Nuxt.js and TypeScript.",
-      "Widget for service station appointment on Vue.js version 3 and TypeScript.",
+      "Working on a new company website in Nuxt.js and TypeScript;",
+      "Widget for booking service station appointments on Vue.js 3 and TypeScript;",
       "Development of internal services, feedback forms, corporate help portal."
     ]
   },
@@ -35,8 +47,8 @@
     "position": "Fullstack JavaScript developer",
     "duration": "December 2021 - April 2022 (part-time)",
     "responsibilities": [
-      "Building a consultation center for road maintenance workers on Vue.js 2 and a backend on Express.js for it.",
-      "Administrative interface, building a library of components.",
+      "Building a consultation center for road maintenance workers on Vue.js 2 and a backend on Express.js for it;",
+      "Administrative interface, building a library of components;",
       "Full customer satisfaction, successful release."
     ]
   },
@@ -45,9 +57,9 @@
     "position": "Freelance Frontend developer",
     "duration": "September 2020 - August 2021",
     "responsibilities": [
-      "Development of office for rent website, interactive office map.",
-      "Frontend on Django templates and vanilla JavaScript.",
-      "Self-configuration of the server side of the project."
+      "Development of a website for office rentals, interactive office map;",
+      "Frontend on Django templates and vanilla JavaScript;",
+      "Configuring the server side of the project on my own."
     ]
   },
   {
@@ -55,9 +67,9 @@
     "position": "System Administrator",
     "duration": "January 2018 - February 2020 (full-time)",
     "responsibilities": [
-      "Working as tech support unit, and system administrator on Ubuntu & Windows, servers and desktops, network and ip-phones",
-      "People management, communication, business trips.",
-      "Setting up ticket tracking system (Like Jira)",
+      "Working as tech support and system administrator: Ubuntu & Windows, servers and desktops, network and IP phones;",
+      "People management, communication, business trips;",
+      "Setting up a ticket tracking system (like Jira);",
       "Opening new offices from the ruins."
     ]
   }
